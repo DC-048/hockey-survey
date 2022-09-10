@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="intro">
+      <h1 class="intro-title">Hockey fan hub</h1>
+      <p class="intro-paragraph">
+        Answer a few question and help us improve the service
+      </p>
+    </header>
+    <main>
+      <form action="">
+        <div class="section">
+          <h3 class="section-title">Personal information</h3>
+          <div class="section-entry">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="user-name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="section-entry">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="user-email"
+              placeholder="Your email address"
+              required
+            />
+          </div>
+          <div class="section-entry">
+            <label for="age">Age</label>
+            <input
+              id="age"
+              type="number"
+              name="user-age"
+              min="18"
+              max="200"
+              placeholder="Your age"
+              required
+            />
+          </div>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Your favorite team</h3>
+          <div class="section-entry">
+            <label for="teams">Team</label>
+            <select id="teams" name="favorite-team">
+              <option value="">Select the team you root for</option>
+              <option value="Traktor">Traktor Chelyabinsk</option>
+              <option value="Severstal">Severstal Cherepovets</option>
+              <option value="Admiral">Admiral Vladivostok</option>
+              <option value="SKA">SKA Saint Petersburg</option>
+              <option value="CSKA">CSKA Moscow</option>
+              <option value="Torpedo">Torpedo Nizhny Novgorod</option>
+              <option value="Ak Bars">Ak Bars Kazan</option>
+              <option value="Amur">Amur Khabarovsk</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Fan experience</h3>
+          <div class="section-entry">
+            <p class="section-p">How long have you been a hockey fan?</p>
+            <label for="new-fan">
+              <input
+                type="radio"
+                name="experience"
+                id="new-fan"
+                class="radio-checkbox"
+                value="experience-new"
+              />
+              Less than a year</label
+            >
+            <label for="experienced-fan">
+              <input
+                type="radio"
+                name="experience"
+                id="experienced-fan"
+                class="radio-checkbox"
+                value="experience-average"
+              />
+              1 — 5 years</label
+            >
+            <label for="hardcore-fan">
+              <input
+                type="radio"
+                name="experience"
+                id="hardcore-fan"
+                class="radio-checkbox"
+                value="experience-hardcore"
+              />
+              More than 5 years</label
+            >
+          </div>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Location</h3>
+          <div class="section-entry">
+            <p class="section-p">Where do you watch games?</p>
+            <label for="home">
+              <input
+                type="checkbox"
+                name="place"
+                id="home"
+                class="radio-checkbox"
+                value="location-home"
+              />
+              Home
+            </label>
+            <label for="arena">
+              <input
+                type="checkbox"
+                name="place"
+                id="arena"
+                class="radio-checkbox"
+                value="location-arena"
+              />
+              Arena
+            </label>
+            <label for="bar">
+              <input
+                type="checkbox"
+                name="place"
+                id="bar"
+                class="radio-checkbox"
+                value="location-bar"
+              />
+              Bar
+            </label>
+          </div>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Your comments</h3>
+          <div class="section-entry">
+            <label for="comments"
+              >Please, share your opinion on the fan service. Any comments are
+              welcome: what you like, what you dislike, what features your would
+              like to have, and so on.
+            </label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols=""
+              rows="5"
+              placeholder="Here's what can be improved..."
+            ></textarea>
+          </div>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </main>
+  </body>
+</html>

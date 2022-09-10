@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* GENERAL LAYOUT */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  background-image: url(Images/ice-6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  width: 50%;
+  margin: 16px auto;
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+  max-width: 700px;
+  min-width: 550px;
+}
+
+/* HEADER */
+.intro {
+  padding: 32px 0;
+}
+
+.intro-title,
+.intro-paragraph {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.intro-title {
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+
+/* FORM */
+form {
+  padding: 16px 32px 32px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* FORM SECTIONS */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0px;
+}
+
+.section-title {
+  margin: 0 0 8px;
+}
+
+.section-entry {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  line-height: 1.5rem;
+}
+
+.section-p {
+  margin: 0 0 8px;
+}
+
+/* INPUTS */
+input,
+select {
+  background-color: #ebebeb;
+  height: 2rem;
+  font-family: "Lato", sans-serif;
+  border: none;
+  margin: 0;
+  padding-left: 8px;
+}
+
+/* RADIO BUTTONS AND CHECKBOXES: CIRCLES AND BOXES */
+.radio-checkbox {
+  min-width: 1rem;
+}
+
+/* TEXTAREA */
+textarea {
+  width: auto;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  background-color: #ebebeb;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(22, 88, 231);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: rgb(7, 64, 189);
+}
